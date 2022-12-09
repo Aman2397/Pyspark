@@ -6,6 +6,13 @@ Data Profiling Code=
 Purpose:
 We are performing data profiling on raw files to check data integrity and quality, before client provides whole data. With the help of data profiling utility, we can eliminate costly errors that usually occur during transformation and Reconciliation. The insights which utility is able to give us, we would be able to improve data consistency and would be able to understand trend much better.
 
+FlowChart=
+                                             |------> Data Profiling -----> Data_ProfilingTable && FrequencyDistribution_percent
+                                             |
+Data Source ----> Data Profiling utility ----|
+                                             |
+                                             |------>Raw_layer Hive script
+
 Data_ProfilingTable=
 Following is basic analysis done using data profiling table,
 RecordCount : Total number of records.
